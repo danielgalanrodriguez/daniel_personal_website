@@ -10,7 +10,8 @@ const IndexPage = () => (
     <Seo title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to my new  site.</p>
-    <p>Page under construction.</p>
+    <p>As you can see this page is under construction.</p>
+    <p>I plan to build something awesome here but it takes time. Stick around and check it out when it's done :D</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
