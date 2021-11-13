@@ -14,8 +14,8 @@ editor:
 collections:
   - name: 'post'
     label: 'Posts'
+    label_singular: 'Post'
     folder: 'content/blog'
-    media_folder: assets/uploads
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     path: '{{title}}/index'
