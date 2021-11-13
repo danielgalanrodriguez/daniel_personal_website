@@ -5,3 +5,5 @@ description: some description here
 image: danielgalan_aboutuspicture.jpg
 ---
 Hi there!
+
+![This is an image from isabella island](isabella_island.jpeg "This is an image from isabella island")
