@@ -18,7 +18,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     public_folder: ''
-    path: '{{title}}/index'
+    path: '{{title}}'
     view_filters:
       - label: Posts With Index
         field: title
