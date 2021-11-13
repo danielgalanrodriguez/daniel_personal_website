@@ -15,10 +15,10 @@ collections:
   - name: 'post'
     label: 'Posts'
     folder: 'content/blog'
+    media_folder: assets/uploads
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-    public_folder: ''
-    path: '{{title}}'
+    path: '{{title}}/index'
     view_filters:
       - label: Posts With Index
         field: title
@@ -52,5 +52,5 @@ collections:
         widget: 'image'
         required: false
         tagname: ''
-        
+
       - { label: 'Body', name: 'body', widget: 'markdown' }
