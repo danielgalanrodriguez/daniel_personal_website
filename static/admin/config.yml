@@ -13,6 +13,8 @@ collections:
     label_singular: 'Post'
     folder: 'content/blog'
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    path: '{{title}}/index'
+    media_folder: 'assets/uploads'
     create: true
     view_filters:
       - label: Posts With Index
