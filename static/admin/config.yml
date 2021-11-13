@@ -2,22 +2,55 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: static/img
-public_folder: /img
+site_url: https://danielgalan.dev
+
+publish_mode: editorial_workflow
+media_folder: assets/uploads
+display_url: https://danielgalan.dev
+editor:
+  preview: true
+
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'post'
+    label: 'Posts'
     folder: 'content/blog'
     create: true
-    slug: 'index'
-    media_folder: ''
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     public_folder: ''
     path: '{{title}}/index'
-    editor:
-      preview: false
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+        
       - { label: 'Body', name: 'body', widget: 'markdown' }
