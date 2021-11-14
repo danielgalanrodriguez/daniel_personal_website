@@ -22,7 +22,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     path: '{{title}}/index'
     media_folder: ''
-    public_folder: '/img'
+    public_folder: '{{public_folder}}'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
