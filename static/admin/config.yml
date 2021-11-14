@@ -15,7 +15,8 @@ collections:
     folder: 'content/blog'
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     path: '{{title}}/{{slug}}'
-    public_folder: 'assets/uploads'
+    media_folder: ''
+    public_folder: ''
     create: true
     view_filters:
       - label: Posts With Index
