@@ -20,9 +20,11 @@ collections:
     label_singular: 'Post'
     folder: 'content/blog'
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-    path: '{{title}}/index'
-    media_folder: ''
-    public_folder: '{{public_folder}}'
+    # --BEGGINING beta feature => Allows save posts in their own folder, (not working with images)--#
+    #path: '{{title}}/index'
+    #media_folder: ''
+    #public_folder: '{{public_folder}}'
+    # --END beta feature--#
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
