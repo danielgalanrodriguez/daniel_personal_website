@@ -20,9 +20,9 @@ collections:
     label_singular: 'Post'
     folder: 'content/blog'
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-    #path: '{{title}}/{{slug}}'
-    #media_folder: ''
-    #public_folder: ''
+    path: '{{title}}/index'
+    media_folder: ''
+    public_folder: ''
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
