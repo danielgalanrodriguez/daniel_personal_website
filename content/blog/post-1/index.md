@@ -7,4 +7,4 @@ This is the new post body without an image.
 
 Turns out that now we do have an image: 
 
-![](assets/uploads/mount-fuji.jpeg)
+![](static/72bb8802e57df89e6db0605db86fd883/2244e/mount-fuji.jpg)
